@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<style>
+    
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid rgb(193, 115, 227);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #41064d;
+  color: rgb(247, 247, 239);
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #e6a6e8a5;
+  padding: 20px;
+  width: 300px;
+  border: 15px solid rgb(255, 255, 255);
+  padding: 50px;
+  margin: 20px;
+}
+</style>
+<body>
+
+
+<div>
+  <form action="/action_page.php">
+
+    <h1>Insert Data</h1>
+    <label for="fname">ชื่อ</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">นามสกุล</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">เพศ</label>
+    <select id="country" name="country">
+      <option value="australia">ไม่ระบุ</option>
+      <option value="canada">ผู้ชาย</option>
+      <option value="usa">ผู้หญิง</option>
+    </select>
+    <label for="birthday">วันเกิด:</label>
+		<input type="date" id="birthday" name="birthday">
+		
+  
+    <input type="submit" value="Add">
+  </form>
+  
+</div>
+
+</body>
+</html>
+<html>
+<head>
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #a74545;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #9577a1;
+}
+#in th {
+    background-color: rgb(114, 152, 217);
+}
+</style>
+</head>
+<body>
+
+<table>
+  <tr id="in">
+    <th>Name</th>
+    <th>Surname</th>
+    <th>Gender</th>
+    <th>Birth date</th>
+  </tr>
+  <tr>
+    <td>นโม</td>
+    <td>โมนะ</td>
+    <td>หญิง</td>
+    <td>2023-07-24</td>
+  </tr>
+  <tr>
+    <td>บอฟอ</td>
+    <td>ฟอบอ</td>
+    <td>ไม่ระบุ</td>
+    <td>2023-05-16</td>
+  </tr>
+  
+</table>
+
+</body>
+</html>
